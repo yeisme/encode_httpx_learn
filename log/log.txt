@@ -1,0 +1,17 @@
+DEBUG [2025-04-21 11:47:28] httpcore.connection - connect_tcp.started host='httpbin.org' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG [2025-04-21 11:47:28] httpcore.connection - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000281F71B36E0>
+DEBUG [2025-04-21 11:47:28] httpcore.connection - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000281F71A9350> server_hostname='httpbin.org' timeout=5.0
+DEBUG [2025-04-21 11:47:29] httpcore.connection - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000281F663DA60>
+DEBUG [2025-04-21 11:47:29] httpcore.http11 - send_request_headers.started request=<Request [b'GET']>
+DEBUG [2025-04-21 11:47:29] httpcore.http11 - send_request_headers.complete
+DEBUG [2025-04-21 11:47:29] httpcore.http11 - send_request_body.started request=<Request [b'GET']>
+DEBUG [2025-04-21 11:47:29] httpcore.http11 - send_request_body.complete
+DEBUG [2025-04-21 11:47:29] httpcore.http11 - receive_response_headers.started request=<Request [b'GET']>
+DEBUG [2025-04-21 11:47:30] httpcore.http11 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 21 Apr 2025 03:48:14 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'314'), (b'Connection', b'keep-alive'), (b'Server', b'gunicorn/19.9.0'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Credentials', b'true')])
+INFO [2025-04-21 11:47:30] httpx - HTTP Request: GET https://httpbin.org/get "HTTP/1.1 200 OK"
+DEBUG [2025-04-21 11:47:30] httpcore.http11 - receive_response_body.started request=<Request [b'GET']>
+DEBUG [2025-04-21 11:47:30] httpcore.http11 - receive_response_body.complete
+DEBUG [2025-04-21 11:47:30] httpcore.http11 - response_closed.started
+DEBUG [2025-04-21 11:47:30] httpcore.http11 - response_closed.complete
+DEBUG [2025-04-21 11:47:30] httpcore.connection - close.started
+DEBUG [2025-04-21 11:47:30] httpcore.connection - close.complete
